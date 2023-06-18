@@ -5,23 +5,6 @@
     <link href="https://sunruibo2233.github.com" />
     <updated>2023-06-17T23:21:39.733Z</updated>
     <entry>
-        <id>https://sunruibo2233.github.com/2023/06/18/hexo/</id>
-        <title>hexo搭建个人博客（作者： Lavender @lavender 链接： https://www.lavenderdh.cn/posts/2798011608/）</title>
-        <link rel="alternate" href="https://sunruibo2233.github.com/2023/06/18/hexo/"/>
-        <content type="html">&lt;h1 id=&#34;本文作者：-Lavender-lavender&#34;&gt;&lt;a href=&#34;#本文作者：-Lavender-lavender&#34; class=&#34;headerlink&#34; title=&#34;本文作者： Lavender @lavender&#34;&gt;&lt;/a&gt;本文作者： Lavender @lavender&lt;/h1&gt;&lt;h1 id=&#34;本文链接：-https-www-lavenderdh-cn-posts-2798011608&#34;&gt;&lt;a href=&#34;#本文链接：-https-www-lavenderdh-cn-posts-2798011608&#34; class=&#34;headerlink&#34; title=&#34;本文链接： https://www.lavenderdh.cn/posts/2798011608/&#34;&gt;&lt;/a&gt;本文链接： &lt;a href=&#34;https://www.lavenderdh.cn/posts/2798011608/&#34;&gt;https://www.lavenderdh.cn/posts/2798011608/&lt;/a&gt;&lt;/h1&gt;&lt;p&gt;#前期准备（软件环境配置）&lt;br&gt;#1、Nodejs&lt;br&gt;下载链接：&lt;a href=&#34;http://nodejs.cn/download/&#34;&gt;http://nodejs.cn/download/&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;配置：&lt;/p&gt;
-&lt;p&gt;安装教程：&lt;a href=&#34;https://www.runoob.com/nodejs/nodejs-install-setup.html&#34;&gt;https://www.runoob.com/nodejs/nodejs-install-setup.html&lt;/a&gt;&lt;br&gt;检验安装配置成功方法：快捷键 win + r 输入 cmd ，打开命令提示符，输入 node -v 和 npm -v 能正常显示版本号即为成功。&lt;br&gt;#2、Git&lt;br&gt;下载链接：&lt;a href=&#34;https://git-scm.com/download/&#34;&gt;https://git-scm.com/download/&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;配置：&lt;/p&gt;
-&lt;p&gt;安装教程：&lt;a href=&#34;https://www.runoob.com/git/git-install-setup.html&#34;&gt;https://www.runoob.com/git/git-install-setup.html&lt;/a&gt;&lt;br&gt;检验安装配置成功方法：快捷键 win + r 输入 cmd ，打开命令提示符，输入 git –version 能正常显示版本号即为成功。（鼠标右键会有两个新的右键菜单 Git GUI Here 和 Git Bash Here )&lt;br&gt;#3、Typora（可选）(Markdown 编辑器)&lt;br&gt;下载链接：&lt;a href=&#34;https://typora.io/#download&#34;&gt;https://typora.io/#download&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;配置：&lt;/p&gt;
-&lt;p&gt;直接下载安装即可&lt;br&gt;(在线 Markdown 编辑器：&lt;a href=&#34;https://pandao.github.io/editor.md/&#34;&gt;https://pandao.github.io/editor.md/&lt;/a&gt;)&lt;br&gt;#安装 Hexo 框架&lt;br&gt;#1、确定文件夹路径&lt;br&gt;这个文件夹是用来放置博客的，之后的命令就在这个文件夹运行。&lt;br&gt;这里以 D:\web\hexo 路径为例。&lt;br&gt;#2、安装 Hexo 框架&lt;br&gt;npm install -g hexo-cli   	&amp;#x2F;&amp;#x2F;安装hexo的基础框架&lt;br&gt;hexo init  				&amp;#x2F;&amp;#x2F;初始化hexo框架&lt;br&gt;npm install  			&amp;#x2F;&amp;#x2F;安装所需要的组件&lt;br&gt;hexo g					&amp;#x2F;&amp;#x2F;编译生成静态页面 (hexo generate)&lt;br&gt;hexo s					&amp;#x2F;&amp;#x2F;启动本地服务 (hexo server)&lt;br&gt;#3、本地 web 搭建完成&lt;br&gt;在输入 hexo s 后会出现以下代码&lt;/p&gt;
-&lt;p&gt;INFO  Validating config&lt;br&gt;INFO  Start processing&lt;br&gt;INFO  Hexo is running at &lt;a href=&#34;http://localhost:4000/&#34;&gt;http://localhost:4000&lt;/a&gt; . Press Ctrl+C to stop.&lt;br&gt;此时浏览器输入 &amp;lt;&lt;a href=&#34;http://127.0.0.1:4000/&#34;&gt;http://127.0.0.1:4000&lt;/a&gt; &amp;gt; 即可打开网页&lt;/p&gt;
-&lt;p&gt;&lt;a href=&#34;https://d33wubrfki0l68.cloudfront.net/5997a40576f3beca7bbbd86fe79a795e9d520d8e/87f88/themes/screenshots/landscape.png&#34;&gt;默认首页页面&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;本地服务器关闭： Ctrl + C ，然后按照提示输入 y 即可。&lt;/p&gt;
-</content>
-        <updated>2023-06-17T23:21:39.733Z</updated>
-    </entry>
-    <entry>
         <id>https://sunruibo2233.github.com/2023/06/18/%E5%8D%9A%E5%AE%A2%E5%8A%A0%E9%80%9F%E5%99%A8/</id>
         <title>博客加速器</title>
         <link rel="alternate" href="https://sunruibo2233.github.com/2023/06/18/%E5%8D%9A%E5%AE%A2%E5%8A%A0%E9%80%9F%E5%99%A8/"/>
