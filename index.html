@@ -1,0 +1,241 @@
+
+<!DOCTYPE html>
+<html lang="cn">
+<head>
+    <meta charset="utf-8" />
+    <title>23sun</title>
+    <meta name="author" content="欢迎来到23孙的blog" />
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+    <link rel="icon" href="/images/avatar.jpg" />
+    <link rel="preconnect" href="https://cdn.staticfile.org" />
+<script src="https://cdn.staticfile.org/vue/3.3.4/vue.global.prod.min.js"></script>
+<link rel="stylesheet" href="https://cdn.staticfile.org/font-awesome/6.4.0/css/all.min.css" />
+<link rel="preconnect" href="https://fonts.loli.net" />
+<link rel="preconnect" href="https://gstatic.loli.net" crossorigin />
+<link rel="stylesheet" href="https://fonts.loli.net/css2?family=Fira+Code:wght@400;500;600;700&family=Lexend:wght@400;500;600;700;800;900&family=Noto+Sans+SC:wght@400;500;600;700;800;900&display=swap" />
+<script> const mixins = {}; </script>
+
+<script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
+
+
+<script src="https://cdn.staticfile.org/highlight.js/11.8.0/highlight.min.js"></script>
+<script src="https://cdn.staticfile.org/highlightjs-line-numbers.js/2.8.0/highlightjs-line-numbers.min.js"></script>
+<link
+    rel="stylesheet"
+    href="https://cdn.staticfile.org/highlight.js/11.8.0/styles/github.min.css"
+/>
+<script src="/js/lib/highlight.js"></script>
+
+
+
+<script src="/js/lib/preview.js"></script>
+
+
+
+
+
+<script src="/js/lib/home.js"></script>
+
+<link rel="stylesheet" href="/css/main.css" />
+
+<meta name="generator" content="Hexo 6.3.0"><link rel="alternate" href="/atom.xml" title="23sun" type="application/atom+xml">
+</head>
+<body>
+    <div id="layout">
+        <transition name="fade">
+            <div id="loading" v-show="loading">
+                <div id="loading-circle">
+                    <h2>LOADING</h2>
+                    <p>加载过慢请开启缓存 浏览器默认开启</p>
+                    <img src="/images/loading.gif" />
+                </div>
+            </div>
+        </transition>
+        <div id="menu" :class="{ hidden: hiddenMenu, 'menu-color': menuColor}">
+    <nav id="desktop-menu">
+        <a class="title" href="/">
+            <span>23SUN</span>
+        </a>
+        
+        <a href="/">
+            <i class="fa-solid fa-house fa-fw"></i>
+            <span>&ensp;Home</span>
+        </a>
+        
+        <a href="/archives">
+            <i class="fa-solid fa-box-archive fa-fw"></i>
+            <span>&ensp;Archives</span>
+        </a>
+        
+        <a href="/about">
+            <i class="fa-solid fa-id-card fa-fw"></i>
+            <span>&ensp;About</span>
+        </a>
+        
+    </nav>
+    <nav id="mobile-menu">
+        <div class="title" @click="showMenuItems = !showMenuItems">
+            <i class="fa-solid fa-bars fa-fw"></i>
+            <span>&emsp;23SUN</span>
+        </div>
+        <transition name="slide">
+            <div class="items" v-show="showMenuItems">
+                
+                <a href="/">
+                    <div class="item">
+                        <div style="min-width: 20px; max-width: 50px; width: 10%">
+                            <i class="fa-solid fa-house fa-fw"></i>
+                        </div>
+                        <div style="min-width: 100px; max-width: 150%; width: 20%">Home</div>
+                    </div>
+                </a>
+                
+                <a href="/archives">
+                    <div class="item">
+                        <div style="min-width: 20px; max-width: 50px; width: 10%">
+                            <i class="fa-solid fa-box-archive fa-fw"></i>
+                        </div>
+                        <div style="min-width: 100px; max-width: 150%; width: 20%">Archives</div>
+                    </div>
+                </a>
+                
+                <a href="/about">
+                    <div class="item">
+                        <div style="min-width: 20px; max-width: 50px; width: 10%">
+                            <i class="fa-solid fa-id-card fa-fw"></i>
+                        </div>
+                        <div style="min-width: 100px; max-width: 150%; width: 20%">About</div>
+                    </div>
+                </a>
+                
+            </div>
+        </transition>
+    </nav>
+</div>
+<transition name="fade">
+    <div id="menu-curtain" @click="showMenuItems = !showMenuItems" v-show="showMenuItems"></div>
+</transition>
+
+        <div id="main" :class="loading ? 'into-enter-from': 'into-enter-active'">
+            <div id="home-head">
+    <div id="home-background" ref="homeBackground" data-images="/images/background.jpg"></div>
+    <div id="home-info" @click="homeClick">
+        <span class="loop"></span>
+        <span class="loop"></span>
+        <span class="loop"></span>
+        <span class="loop"></span>
+        <span class="info">
+            <div class="wrap">
+                <h1>23sun</h1>
+                <h3></h3>
+                <h5></h5>
+            </div>
+        </span>
+    </div>
+</div>
+<div id="home-posts-wrap" true ref="homePostsWrap">
+    <div id="home-posts">
+        
+
+<div class="post">
+    <a href="/2023/11/12/%E5%81%9A%E5%A5%B3%E7%8E%8B%E5%AE%A0%E7%89%A9%E7%9A%84%E6%97%A5%E5%AD%90-%E7%AC%AC%E4%B8%80%E7%AB%A0/">
+        <h2 class="post-title">做女王宠物的日子 第一章</h2>
+    </a>
+    <div class="category-and-date">
+        
+        <span class="date">
+            <span class="icon">
+                <i class="fa-solid fa-calendar fa-fw"></i>
+            </span>
+            2023/11/12
+        </span>
+        
+        
+    </div>
+    <div class="description">
+        <div class="content" v-pre>
+            
+            <p>第1章</p>
+<p>“嘀呜，嘀呜，嘀呜…….”飞船四处闪着红色的警报灯并发出阵阵警报，此时一个估摸着十九岁面相清秀的少年正手忙脚乱地调整着各个控制面板上的数据，“警告！警告，飞船已被伽马三的引力俘获..<br>警告！飞船已被….”<br>少年的手狠狠地砸在了控制面板上“越迁引擎还没准备好吗？”<br>“受伽马三引力的影响跃迁引擎无法工作”人工智能如此回答到。<br>少年长谈一口气瘫在了控制椅上“唉，今天是什么倒霉日子啊，信标发生误差就不说怎么还跃迁到黑洞旁边了？”<br>少年歪过头看着透窗外巨大的黑洞长叹一口气，随后便被名为伽马三的黑洞所吞没。。。<br>格丽斯王国皇家园林，今天的天气十分晴朗万里无云，可今天发生了一件不同寻常的事，在园林的地面上出现了一条长长的深坑，无数金属碎片散落在周围，一群骑士围在深坑尽头的飞船，不！现在应该说是一个金属球的周围。而且似乎有人发现了什么。<br>意识逐渐回到了身体里，背后感觉软软的，而且有一层柔软的毛发<br>“我…..没死？我竟然从黑洞里活了下来？是谁救了我？”带着这样的疑问我逐渐睁开了双眼，刺眼的光线映入我的眼球使我的眼睛一阵刺痛促使我再次合上了双眼，身体依然很麻木。<br>待我适应了光线，睁开双眼看到的是一排手臂粗细的钢柱树立在我的面前，我环顾四周，我的四周都有同样的钢棒。<br>“这是？”我带着疑惑抓住了面前的钢棒“嗯？”映入眼帘的是我从未见过的，纤细白嫩的手，以及从我喉咙里发出的软糯的声音促使我发出了疑惑的声音。“我这是怎么？…”我喉咙再次发出了刚才软糯的声音，我低下头看着白嫩的双手陷入了沉思，一缕黑色柔顺的长发从肩角滑到了手臂上，我顺着头发摸到脑后有顺着脖子摸到了喉结的位置。忽然我好似想到了什么猛的把手伸向[不可描述]，一抓，没有任何熟悉的手感，取而代之的是一条细长的缝隙。“从黑洞活下来就要带走我多年的兄弟嘛”我欲哭无泪的捂住了脸瘫在了地上。当我侧身倒向一边时‘梆’地一声以及头部传来的痛感提醒着我周围的不正常。通常十分理性的我很快就把身体的异变抛之脑后观察起周围的环境来。似乎我在某人的房间里，不远处的豪华大床证明了这一点，我身处的位置应该是房间的一角，更加准确的来说应该是房间一角的笼子里，这个笼子大概只够我坐起来和躺平，笼子的底部铺有不知名动物的皮毛，笼子里出来一个十分精致的枕头以为就没有别的东西了，噢，当然还有可怜的我。“到底是谁救了我还把我关在笼子里，这到底是要救我还是救了我以后就要杀我，不不不哪有那样的变态啊，但至少那个某人救了我但是不杀我把我关在这样一个笼子里应该是需要我活着，那我暂时是没有生命危险的这一点可以确信，但他是出于一个什么样的目的呢？”正当我百思不得其解时远处传来的脚步声引起了我的注意。当脚步声越来越近，我听得越发清楚，是高跟鞋的声音，看来来着是一位女性“是她救的我么？”我充满疑问的目光看向那对我来说十分巨大的房门。‘咔嚓’门开了，走进房门的是一位戴着皇冠高挑的女性，玫瑰红色的长裙包裹着穿着黑丝的长腿，被黑丝包裹的玉足踩着火红的高跟鞋走了过来。她走向我的笼子并蹲了下来，与我四目相对。“我的小可爱，睡得好吗？”她嘴角上扬如此说到，我的疑惑更深了“先自我介绍一下吧，我叫菲，是这个国家，格丽斯王国的女王”我的目光由疑惑转向了震惊，小嘴不收控制地微微张开这位女王似乎察觉了这一点，笑意更深了，她唤了一名女仆过来，那边女仆的托盘上有一个古朴的盒子“来，过来，小可爱把脖子伸过来”此时的我还没有从震惊中缓过神来，下意识的就照做了，直到脖子一凉我才从震惊的状态中退出来。我的脖子上多了一条带子，双手环着这条带子摸了一圈并没有摸到类似扣具的开关“没用的”女王此时带着笑意看着我说到“这是由龙皮制成的项圈，使用专用法阵链接，没有我的允许任何人都无法取下”女王的一番话使我将注意力重新放回女王身上“为什么？”我带着疑问向女王发问“你救了我可你这是干。。”“没有为什么”女王现在应该说是菲打断我的话“你只要知道你现在是我的宠物就行了，至于你的那些疑问以后会知道的，现在你先去洗个澡吧，睡了好几天了”菲的一番话把我的疑问憋回了肚子里，同时也产生了很多新的问题，但现在我觉得我最好按照女王的话来做，人在屋檐下不得不低头嘛。<br>  笼子被打开了，从笼子里爬出来站起来后我发现我的视线才堪堪到女王身旁女仆的腰上方，看来不仅失去了“好哥们”，连身高也失去了。“艾，带她去洗澡吧”女王向她身旁的女仆命令道。“小姐，请跟我来”说完便向门外走去，我看了一眼女王，女王笑眯眯地说到“去吧”便把我推向门外后关上了门，看着经闭的房门我只好放下无数想问的问题跟着在门外等候的女仆去洗个澡先。<br>  来到浴室，姑且先放着中间冒着热气的游泳池不说，跟在我身后的女仆是怎么回事？“小姐，请把双手举起来我为您脱衣洗漱”女仆恭敬说到“不不不不，我可以自己洗的，你在外面等就行了”我在身前晃着双手拒绝了女仆为我洗澡的请求“小姐，陛下说要我给你洗澡那就是我给您更衣沐浴，我不能违背陛下的意愿，否则会丢掉性命的”我实在呦不过她之后按她的要求举起了双手可我并没有察觉到女仆嘴角上翘的弧度。在脱掉白色连衣裙也就是我身上唯一一件衣物后坐在了一个小凳子上，面前的镜子里呈现出了一具幼小的躯体和一副可爱的脸蛋，可是这个脸蛋上的表情是八分懵逼和两分迷茫，我看着这样的身体陷入了沉思“这是我？我在哪？这是什么情况？”女仆拿起蓬蓬头将我的身体打湿后抹上了沐浴露“小姐你的皮肤真的很好呢，又白皙又嫩滑”女仆的手逐渐靠近胸前的两个小包子，酥酥麻麻的感觉一下子传进了脑海里“嗯?”一声娇滴滴的喘息从我的喉咙里发出并把我从思考人生的状态里拉了出来，我望向放在身上的双手此时女仆已经在搓洗其他的地方所以我并没有意识到刚刚被女仆吃了豆腐。我扭过头来望向女仆的方向问到“你说女王陛下说我是她的宠物是什么意思啊？”“就是字面意思小姐，您已经是陛下的宠物了”“为什么是我而不是其他人，就算是她救了我也不能把我变成她的宠物吧？”“陛下的心思不是我等能够猜得到的，您只需要做好陛下的宠物就可以了，至于为什么是您，可能是因为您长得可爱吧”女仆给出了一个看似回答了但又没有回答的答复“请站起来小姐，为您擦净身子就可以去更衣了”我懵懵懂懂地照做并跟着女仆走进了更衣室。<br>  “啊这，这是什么啊？”我望着女仆手上的衣物说道“我要穿这个去见女王吗？”“这是陛下为您挑选的，小姐，请不要任性穿上吧”女仆晃了晃手上粉白相间的Lolita。“唉好吧”我叹了一口气认命了一般走向女仆。不一会一只可爱的小萝莉便从更衣室走了出来，粉白的裙子配上白色的吊带丝袜，踩着小巧的黑色小皮鞋，头上还顶着由蕾丝制成了发饰。几乎所有人看了都会从心底激起保护欲的小萝莉现在的心情似乎不是很好。“胯下凉嗖嗖的，丝袜包裹的腿部感觉好奇怪…”小萝莉嘀嘀咕咕的不知道在说些什么。“小姐，陛下已经在餐厅等您了”“噢”我回过神来，跟着女仆走向了餐厅。打开餐厅的大门我看到了一排推着餐车的女仆和一张长长的桌子，而女王则坐在桌子的尽头。我走向女王，并看了一圈长桌并没有发现有可供我坐下的位置。“那个，陛下？”我学着女仆对女王的称呼“不必学艾她们那样称呼我，叫我菲就可以了，不过最好叫我主人”菲拍了拍她圆润的黑丝大腿说“来坐到我腿上来，我知道你有很多疑问，你睡了好几天了，一定饿得不轻，咱们一边吃饭一边给你解释”“我能…”没等我开口菲的手便穿过我的腋下将我抱到了她的大腿上像个毛绒玩具一样抱着，我刚想挣扎菲就按住了我的头用略带严厉的口吻说道“别动！”我放弃了挣扎，见我安静下来，菲松开了按在我头上的手，拿起餐具切起牛排来“发现你的时候是在三天前……”在菲的不断喂食和讲述我的飞船砸在皇家园林后的事情中我渐渐明白了我现在的处境“也就是说我摧毁了皇家园林身上没有能够补偿的方法只能做宠物来偿还？可你为什么要把我变成女孩子啊？”“嗯？我可没有把你变成女孩子的魔法，我发现你的时候就是这个样子了，不会到现在你还想说这这是个意外吧，就算是个意外你摧毁了园林也是事实，认命吧，异界来客”“可你也不能，唔！..呜呜！.”菲不知道从哪拿出来一个口球并塞到了我嘴里“够了！小可爱我已经不想听你解释了，你，现在是我的宠物，我是这个国家的女王，我说了算，小可爱你今天已经说得够多了，对了，给你起个新名字吧”菲抓住了我试图摘下口球的手并将其扭到了我的背后任凭我如何挣扎女王的手都像钳子一样纹丝不动“对了，叫玲怎么样，嗯，可以，小可爱你以后就叫玲了”菲接过身旁女仆递来的红色棉绳，并将我的手在背后平行捆绑起来，然后把双臂与身体捆在了一起，又绕过肩膀回到了后面并打了几个节。“嗯，挺好看的”菲将双手被捆得完全不能动弹的我抱在怀里，一只手伸向我的缝隙“唔！唔嗯！！呜呜！！！”一种我从未有过的快感直冲脑门，我的小脸肉眼可见的变红“啊啦，玲你这个样子真的好可爱啊”说罢便用指腹揉搓起缝隙尖端的小豆豆起来“噫！唔姆！！唔?噫！！”“嗯，玲很敏感呢～，”菲凑到我的耳边，咬着我的耳垂说道“玲你要认清现实哦，你是宠物，我的宠物，脖子上到项圈就是最好的证明”说完扯了扯我脖子上的项圈“好了，时候不早了，得睡觉了”菲的手从我的裙子里抽出来时已经湿漉漉的了“唔呼，唔呼”我喘着粗气双目无神地看着菲舔了舔手上的晶莹，然后俯下身来擦掉我眼角的泪珠“玲真的好可爱呢，当一辈子我的宠物吧”菲将我公主抱到了她的房间，并放进了我醒来时的笼子里。“啊对了”菲像是想起了什么一样又拿了两根绳子过来，将我的脚踝与腿关键分别捆在了一起“我喜欢玲被捆起来的样子，玲被捆起来的样子最柔弱可爱，以后日常就被捆着吧”说完便关上了笼门“呜呜！”我希望菲至少能把我嘴里的口球取下来“嗯，晚安”菲回应到，看来菲并没有取下口球的意思，是个腹黑呢。挣扎了一会缠绕在身上的绳索并没有变松的迹象，“呼唔”我长叹一口气，算了睡吧，随后瞌上了双眼。</p>
+
+            
+        </div>
+    </div>
+    <div class="post-tags">
+        
+        
+        
+    </div>
+    <a href="/2023/11/12/%E5%81%9A%E5%A5%B3%E7%8E%8B%E5%AE%A0%E7%89%A9%E7%9A%84%E6%97%A5%E5%AD%90-%E7%AC%AC%E4%B8%80%E7%AB%A0/" class="go-post">阅读全文</a>
+</div>
+
+
+        <div class="page-current">
+    
+    <span class="current">1</span>
+    
+    
+    
+    
+</div>
+
+    </div>
+    
+    <div id="home-card">
+        <div id="card-style">
+    <div id="card-div">
+        <div class="avatar">
+            <img src="/images/avatar.jpg" alt="avatar" />
+        </div>
+        <div class="name">欢迎来到23孙的blog</div>
+        <div class="description">
+            <p>Description<br>…</p>
+
+        </div>
+        
+        
+        <div class="friend-links">
+            
+            <div class="friend-link">
+                <a target="_blank" rel="noopener" href="https://argvchs.github.io">Argvchs</a>
+            </div>
+            
+        </div>
+        
+    </div>
+</div>
+
+    </div>
+    
+</div>
+
+            <footer id="footer">
+    <div id="footer-wrap">
+        <div>
+            &copy;
+            2022 - 2023 23sun
+            <span id="footer-icon">
+                <i class="fa-solid fa-font-awesome fa-fw"></i>
+            </span>
+            &commat;欢迎来到23孙的blog
+        </div>
+        <div>
+        
+    </div>
+</footer>
+
+        </div>
+        
+        <transition name="fade">
+            <div id="preview" ref="preview" v-show="previewShow">
+                <img id="preview-content" ref="previewContent" />
+            </div>
+        </transition>
+        
+    </div>
+    <script src="/js/main.js"></script>
+    
+</body>
+</html>
